@@ -17,5 +17,5 @@ sudo chroot /opt/fewch sed --in-place=.old 's/#\[multilib\]/[multilib]\nInclude 
 sudo chroot /opt/fewch sed --in-place=.old 's/#Color/Color/g' /etc/pacman.conf
 sudo chroot /opt/fewch su $USER -c "cd $HOME && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si"
 echo -e '#!/bin/bash\nxhost +local:\narch-chroot /opt/fewch' > /tmp/launch.sh && cp /tmp/launch.sh /opt/fewch/launch.sh && chmod +x /opt/fewch/launch.sh
-echo -e '[Unit]\nDescription=fewch graphical chroot to install dumpy programs\n[Service]\nExecStart=/usr/bin/screen -d -m /opt/fewch/launch.sh\n[Install]\nWantedBy=multi-user.target' > /tmp/fewch.sh && cp /tmp/fewch.sh /usr/lib/systemd/system/fewch.service
+echo -e '[Unit]\nDescription=fewch graphical chroot to install dummy programs\n[Service]\nExecStart=/usr/bin/screen -d -m /opt/fewch/launch.sh\n[Install]\nWantedBy=multi-user.target' > /tmp/fewch.sh && cp /tmp/fewch.sh /usr/lib/systemd/system/fewch.service
 #chroot /opt/fewch su $USER -c "yay -S steam steam-native-runtime krita wps-office ttf-wps-fonts wps-office-extension-french-dictionary namebench"

@@ -1,2 +1,2 @@
 # fewch
-Graphical chroot to install dumpy programs
+Graphical chroot to install dummy programs
