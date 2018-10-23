@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Komodo Edit 11
+GenericName=Editor
+Comment=Free multi-platform editor that makes it easy to write quality code.
+Exec=/usr/bin/schroot_wrapper "/opt/komodo-edit/lib/mozilla/komodo" %F
+Icon=/opt/komodo-edit/share/icons/komodo48.png
+Terminal=false
+Type=Application
+MimeType=text/plain;
+Categories=ActiveState;Application;Development;Editor;Utility;TextEditor;

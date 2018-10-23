@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Warframe
+GenericName=Game
+Comment=Warframe is a cooperative free-to-play third person online action game set in an evolving sci-fi world.
+Exec=/usr/bin/schroot_wrapper /usr/bin/warframe
+Terminal=true
+Type=Application
+MimeType=text/plain;
+Categories=ActiveState;Application;Game
